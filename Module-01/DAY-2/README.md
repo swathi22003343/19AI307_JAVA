@@ -55,9 +55,12 @@ scanner.close();
 
 
 ## OUTPUT:
+Input   Expected     Got
 
-Input    Expected   Got
-23        true      true
+
+23           true         true
+
+
 34        false     false
 
 ## RESULT:
