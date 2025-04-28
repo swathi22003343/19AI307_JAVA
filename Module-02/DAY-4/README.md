@@ -22,12 +22,42 @@ To create a java program that returns the sum of all the values in a 2D array.
  ```
 /*
 Program to implement a Multi Dimensional Array using Java
-Developed by: 
-RegisterNumber:  
+Developed by:SWATHI D 
+RegisterNumber:212222230154 
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+      
+        int rows = scanner.nextInt();
+
+        int cols = scanner.nextInt();
+
+        int[][] array = new int[rows][cols];
+        int sum = 0;
+
+ 
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                array[i][j] = scanner.nextInt();
+                sum += array[i][j];
+            }
+        }
+
+        
+        System.out.println("The sum of all values in the 2D array is: " + sum);
+
+        scanner.close();
+    }
+}
+```
 
 
 
@@ -36,6 +66,7 @@ RegisterNumber:
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/a9a7a263-0e57-4364-a63d-f14bf2c005a7)
 
 
 
