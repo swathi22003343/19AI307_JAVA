@@ -1,22 +1,24 @@
-# Ex.No:2(C)    SINGLE ARRAY
+# Ex.No:2(C)    SINGLE DIMENSIONAL ARRAY
 
 ## AIM:
-To create a java program to read 5 values and display the all 5 values from array using single dimensional array.
+Write a java program to declare and initialization the string value in to the array and display the string from string array elements using single dimensional array.
+
+
 
 ## ALGORITHM :
-1.	Start the program.
-2.	2.	Import the `Scanner` class from the `java.util` package
-3.	Define a class named `ArrayExample`
-4.	Inside the `main` method:
--	a) Create a `Scanner` object called `scanner` to take user input
--	b) Declare an integer array `values` of size 5
--	c) Use a `for` loop to iterate from `i = 0` to `i < 5`:
--   d) Take input from the user and store it in `values[i]`
-5.	Print "Elements in Array are :"
-6.	Use another `for` loop to iterate from `i = 0` to `i < 5`:
--	a) Print each element in `values` followed by a space
-7.	Close the `scanner` to release resources
-8.	End
+STEP1:Start the program.
+
+STEP2:Declare a single-dimensional array of type String.
+
+STEP3:Initialize the array with string values.
+
+STEP4:Traverse the array using a loop.
+
+STEP5:Display each string element from the array.
+
+STEP6:End the program.
+
+
 
 
 
@@ -26,13 +28,27 @@ To create a java program to read 5 values and display the all 5 values from arra
  ```
 /*
 Program to implement a Single Array using Java
-Developed by: 
-RegisterNumber:  
+Developed by:SWATHI D 
+RegisterNumber:212222230154  
 */
 ```
 
 ## Sourcecode.java:
-
+```
+public class OneDimensionString
+{
+    public static void main(String[] args)
+    {
+        
+        String[] str = new String[]{"one", "two", "three", "four"};
+        System.out.println("These are elements of one Dimensional array:");
+        for (int i = 0; i < str.length; i++) 
+	    {
+            System.out.println(str[i] + "   ");
+        }
+   }
+}
+```
 
 
 
@@ -40,6 +56,8 @@ RegisterNumber:
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/f58aadd1-4802-4380-ab06-fd0412ead0cc)
+
 
 
 
