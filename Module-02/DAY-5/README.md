@@ -1,29 +1,96 @@
-# Ex.No:2(E)  SMALLEST ELEMENT IN AN ARRAY
+# Ex.No:2(E)  SECOND LARGEST NUMBER IN AN ARRAY
 
 ## AIM:
-To write a Java program that reads an array size and elements from the user and then finds and prints the smallest element in the array.
+
+Create a java program to find second largest number in an array.
+
+
 ## ALGORITHM :
-1.	Start the program.
-2.	Read the size of the array from the user.
-3.	Declare an array of the given size.
-4.	Read the array elements from the user.
-5.	Initialize a variable min with the first element of the array.
-6.	Traverse the array using a loop.
-7.	Compare each element with min. If an element is smaller, update min.
-8.	After the loop ends, print the smallest number.
-9.	End the program.
+STEP1:Start the program.
+
+STEP2:Read the size of the array from the user.
+
+STEP3:Declare an array of the given size.
+
+STEP4:Read the array elements from the user.
+
+STEP6:Initialize two variables fmax and smax with the first element of the array.
+
+STEP7:Traverse the array using a loop:
+
+STEP8:After the loop ends, print the second largest number smax.
+
+STEP9:End the program.
+
+
 	
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Smallest Element in an Array
-Developed by: 
-RegisterNumber:  
+Developed by:SWATHI D 
+RegisterNumber:212222230154  
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.Scanner;
+
+public class ArrayProgram {
+
+  
+  public static int secondLargest(int[] arr) {
+    
+    
+    int fmax = 0; 
+    int smax = 0; 
+
+    
+    fmax = arr[0];
+    smax = arr[0];
+
+    for (int i = 1; i < arr.length; i++) {
+      if (fmax < arr[i]) {
+        smax = fmax;
+        fmax = arr[i];
+      } else if(smax < arr[i]) {
+        smax = arr[i];
+      }
+    }
+
+    return smax;
+  }
+  
+  public static void main(String[] args) {
+    
+    Scanner scan = new Scanner(System.in);
+
+   
+    int length = 0;
+    int numbers[] = null;
+
+   
+   
+    length = scan.nextInt();
+
+
+    numbers = new int[length];
+
+
+    for (int i = 0; i < numbers.length; i++) {
+      numbers[i] = scan.nextInt();
+    }
+
+    System.out.println("Second largest element = " 
+                         + secondLargest(numbers));
+
+    
+    scan.close();
+  }
+}
+```
 
 
 
@@ -32,12 +99,11 @@ RegisterNumber:
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/db0ee543-ba22-4f2e-9aa8-77a3c6151b22)
 
 
 
 ## RESULT:
-Thus the java program successfully reads the array size and elements from the user and correctly finds and prints the smallest number in the array.
-
-
+Thus, the Java program successfully reads the array size and elements from the user and correctly finds and prints the second largest number in the array.
 
 
