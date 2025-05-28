@@ -16,26 +16,54 @@
  ```
 /*
 Program to implement a String Reader using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SWATHI D
+RegisterNumber: 212222230154
 */
 ```
 
 ## Sourcecode.java:
 
+```
+import java.io.StringReader;
+import java.util.*;
 
 
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    String data = sc.nextLine();
+    int skipnumber=sc.nextInt();
+    System.out.println("Original data: "+  data);
 
+    try {
+          int k=0; 
+           StringReader input = new StringReader(data);
+             input.skip(skipnumber);
+             System.out.println("Data after skipping "+skipnumber +" characters:");
+     
+            while((k=input.read())!=-1){  
+                System.out.print((char)k);  
+            }  
+     
+      input.close();
+    }
 
+    catch(Exception e) {
+      e.getStackTrace();
+    }
+  }
+}
+
+```
 
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/e1a62da3-2e40-472b-b6aa-7934c2012c59)
 
 
 ## RESULT:
 Thus the Java Program to display and skip the specified number of characters using the predefined Method Skip in StringReader was executed and verified successfully.
-
 
 
 
