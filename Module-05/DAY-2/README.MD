@@ -17,35 +17,53 @@ To Create a java program to display the value of volume of cylinder get the radi
 
 
 
-
-
-
-
-
-
 ## PROGRAM:
  ```
 /*
 Program to implement a tightly encapsulated class using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SWATHI D
+RegisterNumber: 212222230154
 */
 ```
 
 ## Sourcecode.java:
+```java
+import java.util.*;
 
+class Num {
+    private int r, h;
+    
+    
+    public void setValues(int r, int h) {
+        this.r = r;
+        this.h = h;
+    }
+    
+    public double calculateVolume() {
+        return (22.0 / 7)  * r * r * h;
+    }
+}
 
-
-
-
-
-
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int r = sc.nextInt();
+        int h = sc.nextInt();
+        
+        Num obj = new Num();
+        obj.setValues(r, h);
+        System.out.println("volume of Cylinder is: " + obj.calculateVolume());
+        
+    }
+}
+```
 ## OUTPUT:
 
+![image](https://github.com/akshayaamanagal/19AI307_JAVA/blob/57a9eed3754de7da917e6ae395448054154907eb/Module-05/DAY-2/image.png)
 
 
 ## RESULT:
 Thus a java program to display the value of volume of cylinder get the radius and height value as input and use tightly encapsulated class was executed successfully.
-
 
 
