@@ -15,13 +15,22 @@ To implement a Java Program to write a String in a file "testout.txt" using File
  ```
 /*
 Program to implement a IO File Stream using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SWATHI D
+RegisterNumber: 212222230154
 */
 ```
 
 ## Sourcecode.java:
+```
 
+ byte[] array = new byte[39];
+             FileInputStream input = new FileInputStream("sample.txt");
+              System.out.println("Available bytes in the file: " +input.available());
+              input.read(array);
+              String data = new String(array);
+              System.out.println("Data read from the file:" +data);
+              input.close();
+```
 
 
 
@@ -30,8 +39,8 @@ RegisterNumber:
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/0ce05546-a859-4626-8896-29120f20ac6c)
 
 
 ## RESULT:
 Thus the implementation of a Java Program to write a String in a file "testout.txt" using FileOutputStream was executed and verified successfully
-
